@@ -1,0 +1,6 @@
+{
+  "name": "week10codingproject",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}

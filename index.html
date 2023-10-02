@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Prices</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <br>
+<!-- Create form for user input of gas price , station location and date -->
+    <div class="card">
+        <div class="card-body bg-light">
+            <div class="row"><b>
+                <div class="col-sm">
+                    <div class="form">
+                        <label for="new-location">Station Location:</label>
+                        <input type="text" class="form-control" id="new-location" placeholder="Address">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form">
+                        <label for="new-price">Gas Price:</label>
+                        <input type="number" class="form-control" id="new-price" placeholder="Price">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form">
+                        <label for="new-datetime">Reporting Date:</label>
+                        <input type="datetime-local" class="form-control" id="new-datetime">
+                    </div>
+                </div>
+            </div></b><br>
+            <div>
+                <button type="submit" id="report" class="btn btn-info">Submit</button>
+            </div>
+        </div>
+    </div><br>
+<!-- Create table to store and display the records -->
+    <table id="records" class="table table-info table-group-divider table-striped-columns table-hover">
+        <tr>
+            <th data-sortable="true" data-field="new-location">Location</th>
+            <th data-sortable="true" data-field="new-price">Gas Price</th>
+            <th data-sortable="true" data-field="new-datetime">Reported Date</th>
+        </tr>
+    </table>
+
+    <script src="./week10.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
